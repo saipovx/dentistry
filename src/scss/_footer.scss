@@ -1,0 +1,167 @@
+.footer{
+    padding: 60px 0px 40px 0px;
+
+    @media (max-width: $breakpoint768) {
+          padding: 40px 0px;
+      }
+
+      @media (max-width: $breakpoint570) {
+        padding: 20px 0px;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        @media (max-width: $breakpoint1645) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+         }
+
+         @media (max-width: $breakpoint570) {
+            gap: 20px;
+          }
+
+        &-item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            @media (max-width: $breakpoint480) {
+                flex: 0 0 100%;
+                width: 100%;
+                gap: 5px;
+             }
+
+            &-title{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 32px;        
+                letter-spacing: -0.08px;
+                color: #0A0909;
+                
+                @media (max-width: $breakpoint480) {
+                   font-size: 18px;
+                 }
+            }
+
+            &-ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                @media (max-width: $breakpoint480) {
+                    gap: 5px;
+                  }
+
+                &-link{
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;          
+                    letter-spacing: 0.1px;
+                    color: #686E77;  
+                    transition:  all ease .3s;   
+                    
+                    display: flex;
+                    text-align: left;
+                    gap: 18px;
+
+                    &:hover{
+                        color: #E31E24;
+                    }
+
+                    @media (max-width: $breakpoint480) {
+                        gap: 10px;
+                        font-size: 14px;
+                      }
+                }
+
+                &-btn{
+                    width: 100%;
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;       
+                    letter-spacing: 0.16px;
+                    color: #E31E24;
+                    transition: all ease .3s;
+
+                    border: 2px solid #E31E24;
+                    border-radius: 8px;
+                    padding: 13px 0px;
+                    background-color: #c5151b00;
+                    margin-top: 10px;
+
+                    &:hover{
+                        background-color: #c5151b;
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+    }
+
+    & .hr{
+        margin-top: 50px;
+        width: 100%;
+        border: 1px solid #000000;
+        opacity: 0.2;
+
+        @media (max-width: $breakpoint570) {
+           margin-top: 20px;
+        }
+    }
+
+    &__bottom{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 44px;
+
+        @media (max-width: $breakpoint480) {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        &-item{
+
+            &-text{
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+                color: #686E77; 
+                
+                & a{
+                    color: #c5151b;
+                }
+            }
+
+        }
+
+
+        &-item2{
+            display: flex;
+            align-items: center;
+            gap: 23px;
+            margin-right: 200px;
+
+            @media (max-width: $breakpoint1200) {
+                margin-right: 0px;
+            }
+        }
+
+    }
+
+}

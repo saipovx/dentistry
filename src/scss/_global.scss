@@ -1,0 +1,85 @@
+// Container
+.container {
+    max-width: ($containerWidth + $containerPadding) + px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 $containerSidePadding + px;
+
+
+
+    @media (max-width: $breakpoint1450) {
+        max-width: 1400px;
+    }
+
+    @media (max-width: $breakpoint992) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+        max-width: 740px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: none;
+    }
+}
+
+// Body Locked
+body {
+    font-family: 'Inter', sans-serif;
+    &.locked {
+        overflow: hidden;
+    }
+    min-width: 0 !important;
+}
+
+
+.consult__item2-img{
+    @media (max-width: $breakpoint480) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+     }
+}
+
+.doctors__item2-bg{
+
+    @media (max-width: $breakpoint992) {
+        width: 400px;
+    }
+
+    @media (max-width: $breakpoint480) {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+// Animations
+// Fade
+@keyframes fade2 {
+    0% {
+        transform: translateX(320px);
+
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+  
+}
+
+@keyframes fade {
+
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(320px);
+    }
+  
+}
+
+
